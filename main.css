@@ -1,23 +1,23 @@
 /*
 Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.
-        on line 8 of sass/_salad.sass
-        from line 8 of sass/main.sass
+        on line 42 of sass/_soup.sass
+        from line 9 of sass/main.sass
 
-3: 	background-repeat: no-repeat
-4: 	background-position: em(-190px) em(100px)
-5: 	overflow-x: hidden
-6:     
-7: .product-info
-8:     text-align: left
-9:     margin-right: auto
-10:     padding: 0
-11:     margin-top: em(360px)
-12:     font-family: Lora, $georgia
-13: 
+37: 
+38: .btn-soup
+39: 	margin-top: em(240px)
+40: 
+41: .citate
+42:     font-size: em(20px)
+43:     line-height: 1.9
+44:     color: $black
+45:     width: 62%
+46:     text-align: left
+47:     font-family: Lora, $georgia
 
 Backtrace:
-sass/_salad.sass:8
-sass/main.sass:8
+sass/_soup.sass:42
+sass/main.sass:9
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:483:in `block in tabulate'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:441:in `each'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:441:in `each_with_index'
@@ -67,4 +67,4 @@ sass/main.sass:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 8 of sass/_salad.sass\A         from line 8 of sass/main.sass\A \A 3: 	background-repeat: no-repeat\A 4: 	background-position: em(-190px) em(100px)\A 5: 	overflow-x: hidden\A 6:     \A 7: .product-info\A 8:     text-align: left\A 9:     margin-right: auto\A 10:     padding: 0\A 11:     margin-top: em(360px)\A 12:     font-family: Lora, $georgia\A 13: "; }
+  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 42 of sass/_soup.sass\A         from line 9 of sass/main.sass\A \A 37: \A 38: .btn-soup\A 39: 	margin-top: em(240px)\A 40: \A 41: .citate\A 42:     font-size: em(20px)\A 43:     line-height: 1.9\A 44:     color: $black\A 45:     width: 62%\A 46:     text-align: left\A 47:     font-family: Lora, $georgia"; }
