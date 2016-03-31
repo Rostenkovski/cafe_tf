@@ -1,6 +1,5 @@
 @import ../bourbon/bourbon
 @import normalize.scss
-@import media.sass
 @import vars.sass
 @import blog.sass
 @import _booking.sass
@@ -81,13 +80,27 @@ body
 
 
 .main-head
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5))
+	position: relative
 	background-image: url("img/header_img.png")
-	min-height: 120vh
+	min-height: em(600px)
+	max-width: 100%
 	background-size: cover
 	background-position: top center
 	overflow-x: hidden
 	text-align: center
 	font-family: PT Sans Caption
+
+.main-head::after
+	background: transparent
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5))
+	content: ""
+	display: block
+	min-height: em(600px)
+	left: 0
+	position: absolute
+	top: 0
+	width: 100%
 
 .phone
 	font-weight: bold
@@ -123,26 +136,25 @@ nav
 
 .author-citate
 	display: block
-	padding-left: 35%
+	padding-left: 50%
 	font-family: PTSans-Caption
 	font-size: em(12px)
 	line-height: 1.4
 	color: #000000
-	margin-top: em(-25px)
 	span 
 		opacity: 0.7
 	img
 		width: em(80px)
 		height: em(80px)
 		vertical-align: middle
-		padding-left: 10px
+		padding-left: em(10px)
 		border-radius: 50%
 		opacity: 1
 
 .artist-name
 	padding-top: 20%
 	img
-	vertical-align: middle
+		vertical-align: middle
 
 
 
@@ -172,6 +184,7 @@ nav
 .events
 	margin-top: em(150px)
 	background-image: url("img/events.jpg")
+	min-width: 100%
 	min-height: em(871px)
 	background-size: cover
 	background-position: top center
@@ -236,7 +249,7 @@ nav
 				display: block
 				padding: em(10px) em(30px)
 				color: #000000
-				font-size: em(18px)
+				font-size: em(14px)
 
 
 .bottom-line
@@ -247,3 +260,5 @@ nav
 
 .bottom-info 
 	text-align: center
+
+@import media.sass
