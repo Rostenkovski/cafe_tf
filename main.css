@@ -1,22 +1,22 @@
 /*
 Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.
-        on line 6 of sass/_salad.sass
+        on line 8 of sass/_salad.sass
         from line 8 of sass/main.sass
 
-1: .salad
-2: 	background-image: url("img/salad.png")
 3: 	background-repeat: no-repeat
 4: 	background-position: em(-190px) em(100px)
 5: 	overflow-x: hidden
-6:     .product-info
-7:         text-align: left
-8: 		margin-right: auto
-9: 		padding: 0
-10: 		margin-top: em(360px)
-11: 		font-family: Lora, $georgia
+6:     
+7: .product-info
+8:     text-align: left
+9:     margin-right: auto
+10:     padding: 0
+11:     margin-top: em(360px)
+12:     font-family: Lora, $georgia
+13: 
 
 Backtrace:
-sass/_salad.sass:6
+sass/_salad.sass:8
 sass/main.sass:8
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:483:in `block in tabulate'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:441:in `each'
@@ -67,4 +67,4 @@ sass/main.sass:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 6 of sass/_salad.sass\A         from line 8 of sass/main.sass\A \A 1: .salad\A 2: 	background-image: url(\"img/salad.png\")\A 3: 	background-repeat: no-repeat\A 4: 	background-position: em(-190px) em(100px)\A 5: 	overflow-x: hidden\A 6:     .product-info\A 7:         text-align: left\A 8: 		margin-right: auto\A 9: 		padding: 0\A 10: 		margin-top: em(360px)\A 11: 		font-family: Lora, $georgia"; }
+  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 8 of sass/_salad.sass\A         from line 8 of sass/main.sass\A \A 3: 	background-repeat: no-repeat\A 4: 	background-position: em(-190px) em(100px)\A 5: 	overflow-x: hidden\A 6:     \A 7: .product-info\A 8:     text-align: left\A 9:     margin-right: auto\A 10:     padding: 0\A 11:     margin-top: em(360px)\A 12:     font-family: Lora, $georgia\A 13: "; }
