@@ -354,85 +354,6 @@ td,
 th {
   padding: 0; }
 
-/*==========  Desktop First Method  ========== */
-@media only screen and (min-height: 899px) {
-  .header_content {
-    padding: 13% 0; } }
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /* */
-  .header_content .top_img_wrap .responsive-img {
-    width: auto;
-    max-width: 100%; }
-
-  .phone {
-    padding-right: 50px; } }
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /* */
-  .header_content h1 {
-    font-size: 2.125em; } }
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices */
-  .animated {
-    /*CSS transitions */
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms */
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations */
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important; }
-
-  .mnu_line {
-    text-align: center; }
-    .mnu_line .logo {
-      display: inline-block; }
-    .mnu_line .phone {
-      text-align: center;
-      padding: 0;
-      margin-top: 25px; }
-    .mnu_line .toggle-mnu {
-      top: -50px; } }
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /* */
-  .header_content h1 {
-    font-size: 1.875em;
-    margin-top: 30px; }
-
-  .header_content ul li {
-    font-size: 1em; } }
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /* */ }
-/*==========  Mobile First Method  ========== */
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /* */ }
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /* */ }
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* */ }
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* */ }
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /* */ }
 .booking {
   margin-top: 18.75em; }
 
@@ -474,21 +395,19 @@ th {
   font-family: Lora; }
 
 .product-image {
-  position: relative;
   text-align: center; }
 
 .product-image img {
-  width: 100%;
-  height: auto;
+  max-width: 28.75em;
+  max-height: 17.6875em;
   position: absolute;
-  top: -12.5em;
-  left: -1.5625em; }
+  left: auto;
+  top: 28.75em; }
 
 .product-info {
   font-family: Lora;
   text-align: right;
   padding: 7.5em 1.5em 3.125em 1.5em;
-  width: 65%;
   margin-left: auto; }
   .product-info h4 {
     font-size: 1.5em; }
@@ -509,11 +428,13 @@ th {
   letter-spacing: 2.6px;
   color: #007aff; }
 
+.btn-soup {
+  margin-top: 15em; }
+
 .citate {
   font-size: 1.25em;
   line-height: 1.9;
   color: #000000;
-  width: 62%;
   text-align: left;
   font-family: Lora;
   font-style: italic;
@@ -581,13 +502,27 @@ body {
   background-image: url("img/icons/pencil.png"); }
 
 .main-head {
+  background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
+  position: relative;
   background-image: url("img/header_img.png");
-  min-height: 120vh;
+  min-height: 37.5em;
+  max-width: 100%;
   background-size: cover;
   background-position: top center;
   overflow-x: hidden;
   text-align: center;
   font-family: PT Sans Caption; }
+
+.main-head::after {
+  background: transparent;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
+  content: "";
+  display: block;
+  min-height: 37.5em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
 .phone {
   font-weight: bold;
@@ -623,25 +558,25 @@ nav {
 
 .author-citate {
   display: block;
-  padding-left: 35%;
+  padding-left: 50%;
   font-family: PTSans-Caption;
   font-size: 0.75em;
   line-height: 1.4;
-  color: #000000;
-  margin-top: -1.5625em; }
+  color: #000000; }
   .author-citate span {
     opacity: 0.7; }
   .author-citate img {
     width: 5em;
     height: 5em;
     vertical-align: middle;
-    padding-left: 10px;
+    padding-left: 0.625em;
     border-radius: 50%;
     opacity: 1; }
 
 .artist-name {
-  padding-top: 20%;
-  vertical-align: middle; }
+  padding-top: 20%; }
+  .artist-name img {
+    vertical-align: middle; }
 
 .booking-image {
   position: relative; }
@@ -662,6 +597,7 @@ nav {
 .events {
   margin-top: 9.375em;
   background-image: url("img/events.jpg");
+  min-width: 100%;
   min-height: 54.4375em;
   background-size: cover;
   background-position: top center;
@@ -717,7 +653,7 @@ nav {
         display: block;
         padding: 0.625em 1.875em;
         color: #000000;
-        font-size: 1.125em; }
+        font-size: 0.875em; }
 
 .bottom-line {
   margin-top: 10%; }
@@ -726,5 +662,63 @@ nav {
 
 .bottom-info {
   text-align: center; }
+
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */ }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* */
+  header .main-mnu ul li a {
+    font-size: 1em;
+    text-decoration: underline; }
+
+  .product-image img {
+    left: 30%; }
+
+  .soup {
+    padding-top: 6.25em; }
+
+  .product-info {
+    width: 100%; }
+    .product-info h2 {
+      font-size: 3.625em; }
+
+  .btn-soup {
+    margin-top: 10.625em; }
+
+  .citate {
+    font-size: 1.125em;
+    padding-bottom: 6.25em; }
+
+  .salad {
+    background-position: -24.375em 6.25em; } }
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* */
+  .product-info {
+    text-align: center;
+    margin: 0 auto; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */ }
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */ }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* */ }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */ }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */ }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */ }
 
 /*# sourceMappingURL=main.min.css.map */
