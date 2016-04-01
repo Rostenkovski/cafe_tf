@@ -33,38 +33,38 @@ nav
 		li 
 			display: inline-block 
 
-//.main_mnu
-//	text-align: center
-//	font-size: em(14px)
-//	>ul
-//		>li 
-//			>a
-//				display: block
-//				padding: 10px 18px
-//				color: #7e91a4  
-//				@extend .mt
-//				&:hover
-//					color: #414e5b  
-//			&.active
-//				a
-//					color: #414e5b
-//					text-decoration: underline
+.main_mnu
+	text-align: center
+	font-size: em(14px)
+	>ul
+		>li 
+			>a
+				display: block
+				padding: 10px 18px
+				color: #7e91a4  
+				@extend .mt !optional
+				&:hover
+					color: #414e5b  
+			&.active
+				a
+					color: #414e5b
+					text-decoration: underline
 .phone
-	text-align: right
+	text-align: center
 	line-height: 1.5
 	.phone-wrap
 		color: #414e5b  
 		font-family: "Exo2Bold", sans-serif
 		font-size: em(16px)
 
-//.callback
-//	color: #7e91a4
-//	font-size: em(13px)
-//	border-bottom: 1px dashed #7e91a4
-//	@extend .mt
-//	&:hover
-//		text-decoration: none
-//		border-color: transparent
+.callback
+	color: #7e91a4
+	font-size: em(13px)
+	border-bottom: 1px dashed #7e91a4
+	@extend .mt !optional
+	&:hover
+		text-decoration: none
+		border-color: transparent
 
 .header_content 
 	padding: 8% 0       
@@ -84,8 +84,7 @@ h2
 	padding: 8% 0 5%
 	li 
 		display: block
-		color: #414e5b  
-		text-transform: uppercase
+		color: #414e5b
 		font-size: em(17px)
 		line-height: 1.6
 	.button
