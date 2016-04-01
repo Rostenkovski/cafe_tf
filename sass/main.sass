@@ -1,46 +1,24 @@
 @import ../bourbon/bourbon
 @import normalize.scss
 @import _flexboxgrid.min
-@import media.sass
-@import vars
-@import header
-@import blog
-@import booking
-@import event
-@import map
-@import salad
-@import soup
+@import _media.sass
+@import _vars
+@import _header
+@import _blog
+@import _booking
+@import _event
+@import _map
+@import _salad
+@import _soup
+@import _footer
 
-
-
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-//Custom Styles Here
-
-//ALWAYS END
-
-//Load Libs SASS
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "PT Sans", $helvetica
+	overflow-x: hidden
 
 a
 	text-decoration: none
@@ -82,174 +60,7 @@ body
 
 
 
-.main-head
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5))
-	position: relative
-	background-image: url("img/header_img.png")
-	min-height: em(600px)
-	max-width: 100%
-	background-size: cover
-	background-position: top center
-	overflow-x: hidden
-	text-align: center
-	font-family: PT Sans Caption
-
-
-.phone
-	font-weight: bold
-	font-size: em(12px)
-	letter-spacing: em(2px)
-	color: $white
-	margin-top: em(50px)
-
-header 
-	color: #ffffff
-	h2
-		font-size: em(48px)
-	h4
-		font-size: em(12px)
-		letter-spacing: em(2px)
-		padding-top: em(10px)
-
-nav
-	text-align: center
-	font-size: em(14px)
-	margin-top: em(60px)
-	ul 
-		list-style-type: none
-		padding: 0
-		margin: 0
-		li 
-			display: inline-block
-			a
-				display: block
-				padding: em(10px) em(40px)
-				color: #ffffff  
-				font-size: em(18px)
-
-.author-citate
-	display: block
-	padding-left: 50%
-	font-family: PTSans-Caption
-	font-size: em(12px)
-	line-height: 1.4
-	color: #000000
-	span 
-		opacity: 0.7
-	img
-		width: em(80px)
-		height: em(80px)
-		vertical-align: middle
-		padding-left: em(10px)
-		border-radius: 50%
-		opacity: 1
-
 .artist-name
 	padding-top: 20%
 	img
 		vertical-align: middle
-
-
-
-
-.booking-image 
-	position: relative
-
-.booking-img
-	position: absolute
-	width: 100%
-	top: em(-200px)
-
-.shadow-image
-	width: 100%
-	position: absolute
-	top: em(-180px)
-	left: 0
-	z-index: -2
-	-webkit-filter: blur(15px) contrast(150%) brightness(90%)  /* Chrome, Safari, Opera */
-
-
-
-
-
-
-
-.events
-	margin-top: em(150px)
-	background-image: url("img/events.jpg")
-	min-width: 100%
-	min-height: em(871px)
-	background-size: cover
-	background-position: top center
-	overflow-x: hidden
-	font-family: PT Sans Caption
-	color: #ffffff
-
-	h2
-		font-size: em(64px)
-		margin-top: em(20px)
-	h4
-		font-size: em(24px)		
-		margin-top: em(60px)
-
-	h1
-		font-size: em(84px)
-		line-height: 1.2
-
-	.artist-info
-		margin-top: em(164px)
-
-	p 
-		font-size: em(18px)
-		line-height: em(34px)
-		font-family: Lora 
-		font-style: italic
-
-
-
-
-.blog 
-	padding-top: 5%
-
-.posts-blog
-	padding-top: 3%
-
-	h4
-		font-size: em(24px)
-		font-family: PT Sans Caption
-		font-weight: bold
-	p
-		opacity: 0.8
-		font-family: Lora
-		font-style: italic
-		font-size: em(18px)
-		line-height: 1.9
-		color: #000000
-
-.map
-	padding-top: 5%
-
-
-.footer
-	padding-top: 8%
-	ul 
-		list-style-type: none
-		padding: 0
-		margin: 0
-		li 
-			display: inline-block
-			a
-				display: block
-				padding: em(10px) em(30px)
-				color: #000000
-				font-size: em(14px)
-
-
-.bottom-line
-	margin-top: 10%
-
-	img
-		padding-left: 10%
-
-.bottom-info 
-	text-align: center

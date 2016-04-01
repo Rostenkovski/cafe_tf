@@ -2,7 +2,6 @@
 .booking 
 	margin-top: em(300px)
 
-
 .booking-info
 	background-color: $white
 	box-shadow: 0 2px 41px 0 rgba(206, 206, 210, 0.5)
@@ -19,3 +18,19 @@
 		margin-top: em(27px)
 		border: solid 1px red
 		color: red
+
+.booking-image 
+	position: relative
+
+.booking-img
+	position: absolute
+	width: 100%
+	top: em(-200px)
+
+.shadow-image
+	width: 100%
+	position: absolute
+	top: em(-180px)
+	left: 0
+	z-index: -2
+	-webkit-filter: blur(15px) contrast(150%) brightness(90%)  /* Chrome, Safari, Opera */
