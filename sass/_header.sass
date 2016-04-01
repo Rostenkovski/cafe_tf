@@ -1,28 +1,9 @@
-@import ../bourbon/bourbon
-
-@import _media.sass
-
-$btn: #14B75A
-$accent: #ECB124
-$blue: #414E5B
-
-=rt($time)
-	transition: all $time ease
-
-.mt
-	transition: all 0.7s ease   
-
-
-
-
-
-
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
+	font-family: "PT Sans", $helvetica
 	overflow-x: hidden
 
 .hidden
@@ -52,22 +33,22 @@ nav
 		li 
 			display: inline-block 
 
-.main_mnu
-	text-align: center
-	font-size: em(14px)
-	>ul
-		>li 
-			>a
-				display: block
-				padding: 10px 18px
-				color: #7e91a4  
-				@extend .mt
-				&:hover
-					color: #414e5b  
-			&.active
-				a
-					color: #414e5b
-					text-decoration: underline
+//.main_mnu
+//	text-align: center
+//	font-size: em(14px)
+//	>ul
+//		>li 
+//			>a
+//				display: block
+//				padding: 10px 18px
+//				color: #7e91a4  
+//				@extend .mt
+//				&:hover
+//					color: #414e5b  
+//			&.active
+//				a
+//					color: #414e5b
+//					text-decoration: underline
 .phone
 	text-align: right
 	line-height: 1.5
@@ -75,14 +56,15 @@ nav
 		color: #414e5b  
 		font-family: "Exo2Bold", sans-serif
 		font-size: em(16px)
-.callback
-	color: #7e91a4
-	font-size: em(13px)
-	border-bottom: 1px dashed #7e91a4
-	@extend .mt
-	&:hover
-		text-decoration: none
-		border-color: transparent
+
+//.callback
+//	color: #7e91a4
+//	font-size: em(13px)
+//	border-bottom: 1px dashed #7e91a4
+//	@extend .mt
+//	&:hover
+//		text-decoration: none
+//		border-color: transparent
 
 .header_content 
 	padding: 8% 0       
